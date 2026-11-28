@@ -3,32 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Aura Essence</title>
 </head>
 <body>
     <header class="cabecalho">
         <h1>Aura Essence</h1>
-        
+
         <nav aria-label="Menu principal">
-            <ul class="menu principal">
+            <ul class="menu-principal">
                 <li><a href="index.html" aria-current="page">Início</a></li>
                 <li><a href="masculino.html">Masculino</a></li>
-                <li><a href="feminino.hmtl">Feminino</a></li>
-                <li><a href="unisex.html">Unisex</a></li>
+                <li><a href="feminino.html">Feminino</a></li>
+                <li><a href="unisex.html">Unissex</a></li>
                 <li><a href="formulario.html">Cadastro</a></li>
             </ul>
         </nav>
     </header>
+
     <main class="conteudo">
 
-        <section id="objetivo" class="secao">
-            <h2>A essência que revela sua presença</h2>
-            <p>Notas raras e composição refinada para quem deixa uma aura marcante por onde passa.</p>
+        <section id="objetivo" class="secao-hero">
+            <div class="texto-hero">
+                <h2>A essência que revela sua presença</h2>
+                <p>Notas raras e composição refinada para quem deixa uma aura marcante por onde passa.</p>
 
-            <a href="#comoescolher" class="botaocomoescolher">Como Escolher Seu Pergume</a>
-            <a href="#tabeladefragrancias" class="botaotabeladefragrancias">Tabela de Preços</a>
+                <a href="#comoescolher" class="btn btn-dourado">Como Escolher Seu Perfume</a>
+                <a href="#tabeladefragrancias" class="btn btn-contorno">Tabela de Preços</a>
+            </div>
 
-            <img src="img/img1.png" alt="Imagem de perfume" class="imagemprincipal">
+            <img src="img/img1.png" alt="Frasco de perfume Aura Essence" class="imagemprincipal">
         </section>
 
         <section id="comoescolher" class="secao">
@@ -36,32 +41,32 @@
             <ol>
                 <li>
                     <h3>Defina a Ocasião</h3>
-                    <p>Escolha perfumes leves para o dia e intensas para eventos noturnos.</p>
+                    <p>Escolha perfumes leves para o dia e intensos para eventos noturnos.</p>
                 </li>
                 <li>
                     <h3>Teste na Pele</h3>
-                    <p>Borrife nos pulsos sem esfregar para não alterar a pirâmide</p>
+                    <p>Borrife nos pulsos sem esfregar para não alterar a pirâmide.</p>
                 </li>
                 <li>
-                    <h3>Aguarde a evolução</h3>
-                    <p>Espere 15 minutos para sentir a fragrância</p>
+                    <h3>Aguarde a Evolução</h3>
+                    <p>Espere 15 minutos para sentir a fragrância.</p>
                 </li>
                 <li>
                     <h3>Escolha o Volume</h3>
-                    <p>Opte por 50 ml para variar ou 100 ml para sua assinatura</p>
+                    <p>Opte por 50 ml para variar ou 100 ml para sua assinatura.</p>
                 </li>
             </ol>
         </section>
 
         <section id="tabeladefragrancias" class="secao">
-            <h2>Tabela de Fragrâncias e Preços</h2>
-            <table>
+            <h2 id="titulo-tabela">Tabela de Fragrâncias e Preços</h2>
+            <table aria-labelledby="titulo-tabela">
                 <thead>
                     <tr>
-                        <th scope="col">FRAGRÂNCIA</th>
-                        <th scope="col">CATEGORIA</th>
-                        <th scope="col">FAMÍLIA OLFATIVA</th>
-                        <th scope="col">PREÇO</th>
+                        <th scope="col">Fragrância</th>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Família Olfativa</th>
+                        <th scope="col">Preço</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -79,13 +84,13 @@
                     </tr>
                     <tr>
                         <td>Oud Imperial</td>
-                        <td>Unisex</td>
+                        <td>Unissex</td>
                         <td>Oriental Ambarado</td>
                         <td class="preco">R$ 560,00</td>
                     </tr>
                     <tr>
                         <td>Vetiver Blanc</td>
-                        <td>Unisex</td>
+                        <td>Unissex</td>
                         <td>Cítrico Amadeirado</td>
                         <td class="preco">R$ 340,00</td>
                     </tr>
@@ -94,19 +99,21 @@
         </section>
 
     </main>
+
     <footer class="rodape">
-        <div class="parte">
-            <h2>AURA ESSENCE</h2>
-            <p>Alta perfumaria artesanal com identidade e sofisticação.</p>
-        </div>
-        <div class="parte">
-            <h2>CONTATO & REDES</h2>
-            <p>auraessence.com.br</p>
-            <p>@auraessence.oficial</p>
+        <div class="rodape-colunas">
+            <div class="parte">
+                <p class="rodape-marca">Aura Essence</p>
+                <p>Alta perfumaria artesanal com identidade e sofisticação.</p>
+            </div>
+            <div class="parte">
+                <h2 class="rodape-titulo">Contato &amp; Redes</h2>
+                <p>auraessence.com.br</p>
+                <p>@auraessence.oficial</p>
+            </div>
         </div>
 
-        <p>&copy; 2026 Aura Essence - Todos os direitos reservados.</p>
-
+        <p class="rodape-copy">&copy; 2026 Aura Essence - Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
